@@ -1,0 +1,24 @@
+.header-container {
+    background-color: #1e2127;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 32px;
+    padding-top: 24px;
+    top: 0;
+}
+
+.header-title {
+    font-family: Chilanka;
+    margin: 0px 0px 32px 0px;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    font-family: Chilanka;
+}
+
+.header-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}

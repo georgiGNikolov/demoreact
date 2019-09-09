@@ -1,0 +1,12 @@
+.add-item-form {
+    display: flex;
+    width: 40vw;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.error {
+    font-size: 1em;
+    color: red;
+}

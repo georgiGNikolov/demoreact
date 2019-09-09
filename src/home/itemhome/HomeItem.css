@@ -1,0 +1,11 @@
+.item {
+    max-width: 250px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 64px;
+    padding: 24px;
+    background: #aaaaaa;
+    border-radius: 32px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}

@@ -1,0 +1,19 @@
+.home-header {
+    font-size: 0.8em;
+    font-family: Chilanka, sans-serif
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.home-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90vw;
+}
