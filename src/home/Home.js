@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Home.css';
 import NewItemForm from './newitemform/NewItemForm';
 import HomeItemsList from './HomeItemsList';
-import { isLoaded, isEmpty } from 'react-redux-firebase'
-import { connect } from 'react-redux'
 
 function home(props) {
     return(
@@ -14,6 +12,5 @@ function home(props) {
             </div>
         );
 }
-
 
 export default home;

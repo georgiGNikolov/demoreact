@@ -103,8 +103,6 @@ class NewItemForm extends Component {
             </form>
         );
     }
-
-    
 }
 
 const mapDispatchToProps = dispatch => {
@@ -112,4 +110,5 @@ const mapDispatchToProps = dispatch => {
         onNewItem: item => dispatch(addNewItem(item))
     }
 }
+
 export default connect(null, mapDispatchToProps)(NewItemForm);
