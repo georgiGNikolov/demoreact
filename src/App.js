@@ -7,6 +7,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import NotFound from './notfound/NotFound';
 import { connect } from "react-redux"
 import { login, register } from "./store/actions/AuthActions"
+import ReduxExample from './reduxexample/ReduxExample';
 
 class App extends Component {
   render() {
@@ -44,9 +45,11 @@ class App extends Component {
                 />
             }
             />
+            <Route path="/example" render={(props) => <ReduxExample {...props}/>}/>
             <Route render={() => <NotFound />} />
           </Switch>
         </main>
+       
       </React.Fragment>
     );
   }
