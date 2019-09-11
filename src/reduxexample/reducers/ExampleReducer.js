@@ -4,8 +4,6 @@ import {
     CHANGE_CAR_TYRE,
     DELETE_CAR_TYRE
 } from '../actions/ExampleActionTypes'
-import { actionTypes } from 'redux-firestore';
-import { unwatchFile } from 'fs';
 
 const initState = {
     users: [
@@ -90,7 +88,6 @@ const initState = {
 const exampleReducer = (state = initState, action) => {
     switch (action.type) {
         case CHANGE_PERSON_NAME: {
-
             const users = [...state.users].map((user, index) => {
                 user.cars = [...user.cars];
                 user.cars.map(car => {

@@ -11,6 +11,7 @@ class ReduxExample extends Component {
             <Button onClick={() => this.props.changeEngineHorsePower(1, "BMW", 3000)} text="Change bmw horsePower"/>
             <Button onClick={() => this.props.changeTyre(1, "BMW", "left-front")} text="Change bmw tyre"/>
             <Button onClick={() => this.props.deleteTyreFrom(1, "BMW", "right-front")} text="Remove front right tyre of bmw"/>
+            <pre>{JSON.stringify(this.props.user, null, 4)}</pre> {/* just rendering the whole json to see any changes in the state */}
         </div>)
     }
 }
@@ -29,9 +30,8 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => {
-    console.log(state);
     return {
-        state
+        user: state.example.users[0]
     }
 }
 
